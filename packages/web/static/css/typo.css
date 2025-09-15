@@ -1,0 +1,54 @@
+:root {
+	--site-chrome-background: #141d3b;
+	--site-chrome-color: white;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body, button, input {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 40px 0;
+}
+
+h3, h4, h5 {
+	font-size: 1.6rem;
+	font-weight: 400;
+	text-align: center;
+	padding: 10px 0;
+}
+
+h3 {
+	background: #e7ecfd;
+}
+
+h5 {
+	background: #00a81b;
+	color:  white;
+	font-size: 2.5rem;
+}
+
+.center {
+	display: grid;
+	grid-auto-flow: row;
+	grid-gap: 10px;
+	justify-items: center;
+	margin: 40px 20px;
+}
+
+.page {
+	max-width: 900px;
+	margin: 40px auto 80px;
+	padding: 0 20px ;
+}
