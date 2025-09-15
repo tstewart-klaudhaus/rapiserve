@@ -1,21 +1,12 @@
 {
-	"name": "rapiserve",
+	"name": "rapiserve-monorepo",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
-	"scripts": {
-		"dev": "vite dev --port 5252",
-		"build": "vite build",
-		"preview": "vite preview",
-		"prepare": "svelte-kit sync || echo ''",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"format": "prettier --write .",
-		"lint": "prettier --check . && eslint .",
-		"test:unit": "vitest",
-		"test": "npm run test:unit -- --run && npm run test:e2e",
-		"test:e2e": "playwright test"
-	},
+  "scripts": {
+    "clean-node-modules": "find . -name 'node_modules' -type d -exec rm -rf {} +",
+    "reinstall": "pnpm clean-node-modules && pnpm install -r --prefer-offline"
+  },
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
 		"@eslint/js": "^9.18.0",
@@ -39,7 +30,6 @@
 		"vitest": "^3.2.3"
 	},
 	"dependencies": {
-		"@types/http-proxy": "^1.17.16",
 		"bootstrap-icons": "^1.13.1"
 	}
 }
