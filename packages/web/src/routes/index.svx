@@ -1,0 +1,3 @@
+<div class="center">
+	<img src="/art/rapiserve-logo.png" alt="Rapiserve Logo">
+</div>

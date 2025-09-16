@@ -49,10 +49,16 @@ h5 {
 	grid-gap: 10px;
 	justify-items: center;
 	margin: 40px 20px;
+	position: relative;
+
+	img {
+		max-width: 100%;
+	}
 }
 
 .page {
 	max-width: 900px;
 	margin: 40px auto 80px;
-	padding: 0 20px ;
+	padding: 0 20px;
+	position: relative;
 }
