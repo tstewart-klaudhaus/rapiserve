@@ -17,6 +17,11 @@
 		"test:e2e": "playwright test"
 	},
 	"dependencies": {
-		"bootstrap-icons": "^1.13.1"
+		"@openai/agents": "^0.1.2",
+		"@openai/agents-realtime": "^0.1.2",
+		"bootstrap-icons": "^1.13.1",
+		"openai": "^5.20.2",
+		"ts-dedent": "^2.2.0",
+		"zod": "^4.1.8"
 	}
 }
